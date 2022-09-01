@@ -11,7 +11,7 @@ Console.WriteLine("Введите второе число: ");
 int number2 = int.Parse(Console.ReadLine()); // для перевода string в число
 
 int max = number1;
-int min = 0;
+int min = number2;
 
 if (max < number2)
 {
