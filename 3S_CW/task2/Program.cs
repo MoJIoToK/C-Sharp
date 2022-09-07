@@ -1,14 +1,25 @@
 ﻿// 18. Напишите программу, которая по заданному номеру четверти, 
 // показывает диапазон возможных координат точек в этой четверти (x и y)
 
-Console.WriteLine("Введите четверть: "); // Приглашение ко вводу дня недели
-int number = int.Parse(Console.ReadLine());
+Console.Write("Введите номер четверти ");
+int x = int.Parse(Console.ReadLine());
 
-
-if (x > 0 && y > 0) Console.WriteLine("1 четверть");
-if (x < 0 && y > 0) Console.WriteLine("2 четверть");
-if (x < 0 && y < 0) Console.WriteLine("3 четверть");
-if (x > 0 && y < 0) Console.WriteLine("4 четверть");
+if (x == 1)
+{
+    Console.WriteLine("0 < x <oo  & 0 < y < oo");
+}
+if (x == 2)
+{
+    Console.WriteLine("-oo < x < 0 & 0 < y < oo");
+}
+if (x == 3)
+{
+    Console.WriteLine("-oo < x < 0 & -oo < y < 0");
+}
+if (x == 4)
+{
+    Console.WriteLine("0 < x < oo & -oo < y < 0");
+}
 
 // Second variation:
 // Console.WriteLine("Введите номер четверти");
