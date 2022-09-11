@@ -49,7 +49,7 @@ Console.WriteLine(year);
 
 // Метод 4 что-то принимают, что-то возвращают
 
-string Method4(int count, string c) // принимает на вход, ничего не возвращают
+string Method4(int count, string c) // принимает на вход,
 {
     //int i = 0;
     string result = String.Empty;
