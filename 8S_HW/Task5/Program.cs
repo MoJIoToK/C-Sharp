@@ -22,8 +22,9 @@ while (temp <= n * n)
     if (i <= j + 1 && i + j < array.GetLength(1) - 1) j++; // проходит нулевую строку слева направо
     else if (i < j && i + j >= array.GetLength(0) - 1) i++; // проходит правый столбец сверху вниз
     else if (i >= j && i + j > array.GetLength(1) - 1) j--; // проходит последнюю строку справо налево
-    else i--;// проходит левый столбец снизу вверх
+    else i--;// проходит левый столбец снизу вверх  
 }
+
 
 PrintArray(array);
 
@@ -33,9 +34,7 @@ void PrintArray(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            if (array[i, j] / 10 <= 0)
-                Console.Write($"0{array[i, j]}  ");
-
+            if (array[i, j] / 10 <= 0) Console.Write($"0{array[i, j]}  ");
             else Console.Write($"{array[i, j]}  ");
         }
         Console.WriteLine();
